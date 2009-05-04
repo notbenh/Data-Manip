@@ -9,6 +9,10 @@ my $builder = Module::Build->new(
     dist_version_from   => 'lib/Data/Manip.pm',
     build_requires => {
         'Test::More' => 0,
+        'Test::Most' => 0,
+        'Exporter'   => 0,
+        'Carp::Assert::More' => 0,
+
     },
     add_to_cleanup      => [ 'Data-Manip-*' ],
     create_makefile_pl => 'traditional',
